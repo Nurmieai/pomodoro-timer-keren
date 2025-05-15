@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="tabs">
+        <div class="tab active" data-mode="Focus">Focus</div>
+        <div class="tab" data-mode="Break">Break</div>
+        <div class="tab" data-mode="Long Break">Long</div>
+      </div>
+
+      <div class="timer-container">
+        <div id="timer">25:00</div>
+        <div class="controls">
+          <button id="start">▶</button>
+          <button id="pause">⏸</button>
+          <button id="reset">⟳</button>
+        </div>
+      </div>
+
+      <div class="setting-box">
+        <label>Focus: <input type="number" id="focusTime" value="25" /></label>
+        <label>Break: <input type="number" id="breakTime" value="5" /></label>
+        <label>Long: <input type="number" id="longTime" value="15" /></label>
+      </div>
+    <div id="muteBtn">🔊</div>
+    <audio id="breakSound" src="music/one last adventure.mp3" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
